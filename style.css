@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: banguiat;
+    src: url(fonts/Benguiat\ Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #ffffff;
+    font-family: "poppins", sans-serif;
+    overflow-x: hidden;
+    background-color: #0C0102;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 2% 2%;
+    margin: 1rem 0;
+    color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    font-size: 1.5rem;
+
+    .header-logo {
+        width: 10%;
+    }
+}
+
+.img-hero {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    background-image: url('images/Hero.webp');
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background: radial-gradient(circle,rgba(0, 0, 0, 0.25) 100%, rgba(0, 0, 0, 1) 100%);
+
+    .intro {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin:0 7% 17%
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        width: 30%;
+
+        h2 {
+            font-size: 1.2vw;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.5rem;
+        }
+
+        h1{
+            font-size: 4vw;
+            font-family: "banguiat";
+
+        }
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 30%;
+        height: 100%;
+        gap: 5vh;
+    }
+
+    p {
+        font-size: 2vw ;
+        font-family: "Poppins", sans-serif;
+        text-align: right;
+        
+    }
+
+   
+
+   
+}
+
+ .btn-escolha {
+        border-bottom: 2px solid #ffffff;
+    }
+
+ button {
+        background: none;
+        color: #ffffff;
+        border: none;
+        padding: 0 0 2%;
+    }
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110vh;
+    background-image: url(images/Devorador\ de\ mentes.webp);
+    background-position: center;
+    background-size: cover;
+
+    .escolha {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1% 7% 2%;
+    }
+
+    .cidade-destino {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 7% 0;
+
+        .cidade {
+            width: 32%;
+            height: 30vh;
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            padding: 10px;
+            background-position: center;
+            background-size: cover;
+
+            .nome-cidade {
+                font-size: 1.3vw; 
+            }
+
+            .ingressos {
+                font-size: 0.8vw;
+            }
+
+
+        }
+
+        .cidade:first-child {
+            background-image: url(images/sidney_2_1x.webp);
+            
+        }
+
+        .cidade:nth-child(2) {
+            background-image: url(images/mexico_1_1x.webp);
+        }
+
+        .cidade:last-child {
+            background-image: url(images/yas_island_1_1x.webp);
+        }
+
+        
+       
+    }
+
+    .comentarios {
+        display: flex;
+        flex-direction: column;
+        padding: 4% 7%;
+
+        .logos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 0 3% 0;
+        }
+
+        .depoimentos {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            width: 100%;
+            height: 25vh;
+
+            img {
+                margin-bottom: 10px;
+            }
+
+            .depoimento {
+                width: 25%;
+                height: 100%;
+    
+            }
+        }
+    }
+
+    .agradecimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 7%;
+            margin: 2% 0 0 0;
+
+        }
+
+       
+    }
+
+    
+}
+
+ li {
+        list-style: none;
+    }
+
+footer {
+    height: 80vh;
+    background-image: url(images/Footer_1x.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .contatos {
+        width: 100%;
+        padding: 3% 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+     h3 {
+            font-size: 1.2vw;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.5rem;
+        }
+
+     h2{
+            font-size: 4vw;
+            font-family: "banguiat";
+            width: 30%;
+
+        }
+
+    .contato {
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: space-between;
+
+        h4 {
+            font-family: "poppins", sans-serif;
+            font-size: 1.5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logos-redes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+    }
+
+    .logos-footer {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1% 2%;
+    }
+
+    .animated {
+        display: flex;
+        width: max-content;
+        margin-bottom: 2%;
+        
+
+       p {
+        font-family: "banguiat", sans-serif;
+        font-weight: bold;
+        font-size: 10vw;
+        mix-blend-mode: color-dodge;
+        color: rgb(147, 147, 147);
+        animation: infiniteText 10s infinite linear;
+       }
+    }
+}
+
+
+
+@keyframes infiniteText {
+
+        100% {
+            transform: translateX(-100%) ;
+        }
+    }
+    
+
+
+    /* MEDIA QUERIES ↓ */
+
+    @media (max-width: 1800px) {
+        footer .animated {
+            margin-bottom: 5%;
+        }
+    }
+
+ @media (max-width:800px) {
+    .hero .intro {
+        width: 100%;
+        height: 95%;
+        padding: 4% 0 0 0;
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .titulo {
+            margin-top: 10%;
+            width: 100vw;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 10vw;
+        }
+
+        h2 {
+            font-size: 3vw;
+        }
+
+        .texto {
+            align-items: center;
+            width: 80%;
+
+            p {
+                font-size: 5vw;
+                text-align: center;
+            }
+
+            .btn-escolha button {
+                font-size: 3vw;
+            }
+
+            .btn-escolha img {
+                width: 2.5vw;
+            }
+        }
+    }
+
+    .corpo {
+        align-items: center;
+        height: 130vh;
+
+        .cidades .escolha {
+            display: none;
+        }
+
+        .cidades .cidade-destino {
+            margin: 0;
+            padding: 0 7%;
+            width: 100vw;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .cidade {
+                width:42vw;
+                height: 20vh;
+                margin: 0.5%;
+                flex-direction: column;
+                align-items: center;
+
+                .nome-cidade {
+                    font-size: 4vw;
+                }
+
+                .ingressos {
+                    font-size: 2.5vw;
+                }
+            }
+        }
+
+        .comentarios .depoimentos {
+            height: 45vh;
+            flex-direction: column;
+            align-items: center;
+
+            .depoimento {
+                width: 90%;
+                text-align: center;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    .corpo .agradecimentos {
+        padding: 1% 7%;
+
+        h2 {
+            font-size: 4vw;
+            margin-top: 10%;
+        }
+
+        ul {
+            flex-wrap: wrap;
+            align-items: center;
+
+            li {
+                margin: 1%;
+                font-size: 2.5vw;
+            }
+
+        }
+    }
+
+    footer .contatos {
+        flex-direction: column;
+
+        .titulo-footer {
+            width: 50vw;
+            text-align: center;
+            justify-content: baseline;
+            margin: 0 0 3% 0;
+            
+            h2 {
+                width: 100%;
+                font-size: 6vw;
+            }
+
+            h3 {
+                font-size: 2vw;
+                margin-bottom: 5%;
+            }
+        }
+
+        .contato {
+            width: 100%;
+        }
+    }
+
+    .logos-footer {
+            justify-content: baseline;
+        }
+
+    .animated {
+        height: 27vh;
+
+        .texto-infinito {
+            font-size: 20vh;
+        }
+    }
+
+ }
+
+ @media (max-width:450px) {
+
+    header {
+
+        padding: 3% 7%;
+
+        .header-logo {
+            width: 20vw;
+        }
+
+    }
+    
+
+    .img-hero:first-child {
+        background-image: url(images/mobile\ hero\ 1.webp);
+
+    }
+
+    main .img-hero:nth-child(2) {
+        background-image: url(images/mobile\ hero\ 2.webp);
+        z-index: 0;
+    }
+
+    .hero .intro {
+        width: 100%;
+        height: 95%;
+        padding: 4% 0 0 0;
+        margin: 0;
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .titulo {
+            margin-top: 20%;
+            width: 100vw;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 13vw;
+        }
+
+        h2 {
+            font-size: 4vw;
+        }
+
+        .texto {
+            align-items: center;
+            width: 80%;
+            z-index: 100;
+
+            p {
+                font-size: 7vw;
+                text-align: center;
+            }
+
+            .btn-escolha button {
+                font-size: 4vw;
+            }
+
+            .btn-escolha img {
+                width: 2.5vw;
+            }
+        }
+    }
+
+    .corpo {
+        align-items: center;
+        height: 175vh;
+        justify-content: space-between;
+
+        .cidades .escolha {
+            display: none;
+        }
+
+        .cidades .cidade-destino {
+            margin: 0;
+            padding: 0 7%;
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .cidade {
+                width:80vw;
+                height: 20vh;
+                margin: 1.5%;
+                flex-direction: column;
+                align-items: center;
+
+                .nome-cidade {
+                    font-size: 7vw;
+                }
+
+                .ingressos {
+                    font-size: 3.5vw;
+                }
+            }
+        }
+
+        .comentarios {
+            padding: 5%;
+
+            .logos img {
+                width: 30%;
+                margin: 5% 0;
+                
+            }
+        }
+
+        .comentarios .depoimentos {
+            height: 45vh;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 35%;
+
+            
+
+            .depoimento {
+                width: 90%;
+                text-align: center;
+                margin-bottom: 10%;
+            }
+        }
+    }
+
+    .corpo .agradecimentos {
+        padding: 1% 7%;
+        justify-content: space-between;
+        margin-bottom: 5%;
+
+        h2 {
+            font-size: 5vw;
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        ul {
+            flex-wrap: wrap;
+            align-items: center;
+
+            li {
+                margin: 1%;
+                font-size: 3vw;
+            }
+
+        }
+    }
+
+    footer {
+        background-repeat: no-repeat;
+        background-position: -680px; 
+    }
+
+    footer .contatos {
+        flex-direction: column;
+
+        .titulo-footer {
+            width: 80vw;
+            text-align: center;
+            justify-content: baseline;
+            margin: 0 0 3% 0;
+            
+            h2 {
+                width: 100%;
+                font-size: 10vw;
+            }
+
+            h3 {
+                font-size: 3vw;
+                margin-bottom: 5%;
+            }
+        }
+
+        .contato {
+            width: 100%;
+
+            .redes-sociais {
+                h4 {
+                    font-size: 2vw;
+                }
+
+                img {
+                    width: 6vw;
+                }
+            }
+
+            img {
+                width: 20vw;
+            }
+
+            .institucional {
+                h4 {
+                    font-size: 3vw;
+                }
+                ul li {
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+
+    .logos-footer {
+        img {
+            width: 20vw;
+        }
+    }
+
+    .animated {
+        height: 27vh;
+        padding-bottom: 70%;
+        
+        .texto-infinito {
+            font-size: 20vh;
+        }
+    }
+
+ }
+
+ 
+
