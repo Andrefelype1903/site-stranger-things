@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>Stranger things</title>
 </head>
 
 
 <body>
-    <header>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+             <header>
         <p>AF</p>
         <img class="header-logo" src="images/netflix.svg" alt="">
     </header>
     <main>
-        <div class="img-hero"></div>
-        <div class="img-hero"></div>
         <section class="hero">
+            <picture data-speed="0.5">
+                <source media="(min-width:450px )" srcset="images/paralax1.webp">
+                <img class="img-hero" src="images/mobile hero 1.webp" alt="">
+            </picture>
+            <picture>
+                <source media="(min-width:450px )" srcset="images/paralax2.webp">
+                <img class="img-hero" src="images/mobile hero 2.webp" alt="">
+            </picture>
+            
+            <!-- <img class="img-hero" src="images/paralax2.webp" alt=""> -->
         <div class="intro">
             <div class="titulo">
                 <h2>THE EXPERIENCE</h2>
@@ -136,13 +148,20 @@
             <p class="texto-infinito">THE EXPERIENCE •</p>
         </div>
     </footer>
+        </div>
+    </div>
+   
     
 
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
 
-
+    <script src="script.js"></script>
 
 </body>
 </html>
