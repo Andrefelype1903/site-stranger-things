@@ -120,6 +120,31 @@ header {
    
 }
 
+.pre-loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C0102 ;
+    z-index: 100;
+    position: fixed;
+
+    svg {
+        width: 30vw;
+        height: auto;
+
+        path{
+            fill: rgba(169, 22, 22, 0.367);
+            stroke: rgb(169, 22, 22) ;
+            stroke-dasharray: 1150px;
+            stroke-dashoffset: 1150px;
+
+        }
+    }
+
+}
+
  .hero:before {
         content: "";
         background: linear-gradient(180deg, rgba(12,1,2,0.00) 0%, #0c0102 100%);
@@ -138,6 +163,7 @@ header {
         color: #ffffff;
         border: none;
         padding: 0 0 2%;
+        cursor: pointer;
     }
 
 .corpo {
@@ -247,11 +273,8 @@ header {
             margin: 2% 0 0 0;
 
         }
-
-       
     }
 
-    
 }
 
  li {
